@@ -2,7 +2,7 @@
 <a href="{{ site.baseurl }}{{ project.link }}" class="no-underline">
 {% endif %}
   <div class="github-component bg-white hover-grow height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} rounded-1"
-  {% if project.image_link %}style="background-image: url('{{ site.baseurl }}{{ project.image_link }}');background-size: cover"{% endif %}
+  {% if project.image_link %}style="background-image: url('/{{ project.image_link }}');background-size: cover"{% endif %}
   >
     <div class="p-3"  {% if project.image_link %}style="background: rgba(255, 255, 255, 0.3); height: 100%;"{% endif %}>
       <div class="d-flex flex-justify-between flex-items-start mb-1">

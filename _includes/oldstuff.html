@@ -1,0 +1,9 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>Really old stuff</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Projects created before 2014 and before I really work in the web</p>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% for project in site.oldstuff  %}
+    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-6 mb-3">
+      {% include oldstuff-card.html %}
+    </div>
+  {% endfor %}
+</div>

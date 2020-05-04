@@ -1,0 +1,104 @@
+layout: sidebar
+style: dark
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "oldstuff/"
+    values:
+      layout: 'null'
+
+projects:
+  sort_by: stars
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 6
+  exclude:
+    forks: false
+    projects:
+    - STConf
+
+social_media:
+  twitter: jibbarth
+  linkedin: jibé-b-772884a3
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # medium: @your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
+  # youtube: your_username
+  # vk: your_username
+
+topics:
+  - name: Symfony
+    web_url: https://github.com/topics/symfony
+    image_url: https://raw.githubusercontent.com/github/explore/d0c5a5e31e1776ad62379ef5f6b703bcf107d3a3/topics/symfony/symfony.png
+
+  - name: PHP
+    web_url: https://github.com/topics/php
+    image_url: https://raw.githubusercontent.com/github/explore/ccc16358ac4530c6a69b1b80c7223cd2744dea83/topics/php/php.png
+
+  - name: Vue
+    web_url: https://github.com/topics/fue
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/vue/vue.png
+
+  - name: Docker
+    web_url: https://github.com/topics/docker
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/docker/docker.png
+
+oldstuff:
+  - name: Portfolio // 2013
+    description: My Portfolio in 2013
+    link: oldstuff/portfolio.html
+    image_link: oldstuff/images/portfolio.webp
+    white: true
+
+  - name: Face Emotion Write
+    description: Enable camera 🎥 Smile 😊 Have fun 👌
+    link: oldstuff/experiments/writeWithEmotion/index.html
+
+  - name: Moskova Workshop
+    description: Mockup of a web-site of communication around a sports event organized by Moskova
+    link: oldstuff/workshop/accueil.html
+    image_link: oldstuff/images/workshop.png
+
+  - name: Nuits blanches
+    description: Mock up of website to make event around "Nuits blanches" in Paris
+    link: oldstuff/nuitblanche/accueil.html
+    image_link: oldstuff/images/nuitblanche.png
+    white: true
+
+  - name: Carhartt Girl Collectif
+    description: Mock up of website to make event around Carhartt brand
+    link: oldstuff/carhartt/firstpage.html
+    image_link: oldstuff/images/girlco.png
+
+  - name: "CSS Experiments # Move papers"
+    description: Simulate switching papers by hand in CSS
+    link: /ChangePaper/
+    image_link: oldstuff/images/paperMove.png
+    white: false
+
+  - name: Repetito
+    description: Mock up of collaborative website for the loop software Repetito
+    link: oldstuff/repetito/accueil.html
+    image_link: oldstuff/images/repetito.png
+    white: true
+
+  - name: Typewritter
+    description: Enable sound 🔊 Type Words ⌨ Have fun 👌
+    link: /typewritter/

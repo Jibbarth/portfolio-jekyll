@@ -1,0 +1,21 @@
+{% if project.link %}
+<a href="{{ site.baseurl }}{{ project.link }}" class="no-underline">
+{% endif %}
+  <div class="github-component bg-white hover-grow height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} rounded-1"
+  {% if project.image_link %}style="background-image: url('{{ site.baseurl }}{{ project.image_link }}');background-size: cover"{% endif %}
+  >
+    <div class="p-3"  {% if project.image_link %}style="background: rgba(255, 255, 255, 0.3); height: 100%;"{% endif %}>
+      <div class="d-flex flex-justify-between flex-items-start mb-1">
+        <p class="f3 lh-condensed text-center text-bold {% if project.white %}text-white{% else %}text-gray-dark{% endif %} mb-0 mt-1"
+        style="{% if project.white %}background: rgba(0, 0, 0, 0.4);{% else %}background: rgba(255, 255, 255, 0.6);{% endif %}">
+          {{ project.name }}
+        </p>
+      </div>
+      {% if project.description %}
+        <p class="f5 {% if project.white %}text-white{% else %}text-gray-dark{% endif %} mb-0 mt-1">{{ project.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+{% if project.link %}
+</a>
+{% endif %}

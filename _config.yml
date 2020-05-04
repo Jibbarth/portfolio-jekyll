@@ -63,7 +63,7 @@ topics:
 oldstuff:
   - name: Portfolio // 2013
     description: My Portfolio in 2013
-    link: oldstuff/portfolio.html
+    link: oldstuff/index.html
     image_link: oldstuff/images/portfolio.webp
     white: true
 
